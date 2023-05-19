@@ -1,0 +1,487 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+:root {
+  --bright-red: hsl(12, 88%, 59%);
+  --dark-blue: hsl(228, 39%, 23%);
+  --dark-grayish-blue: hsl(227, 12%, 61%);
+  --very-dark-blue: hsl(233, 12%, 13%);
+  --very-pale-red: hsl(13, 100%, 96%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+body {
+  background-color: var(--very-light-gray);
+  background-image: url("images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-position-x: 68.4rem;
+  background-position-y: -16.2rem;
+  background-repeat: no-repeat;
+}
+header.header {
+  padding: 6.4rem 6.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul.nav-bar {
+  display: flex;
+  align-items: center;
+}
+header li {
+  list-style: none;
+}
+header a {
+  text-decoration: none;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: var(--dark-blue);
+  margin-left: 2.4rem;
+}
+header ul li:hover {
+  opacity: 0.5;
+}
+
+li.item:first-child {
+  margin-left: 0;
+}
+
+button.button {
+  background: var(--bright-red);
+  padding: 1rem 2.2rem;
+  border-radius: 1.8rem;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  box-shadow: 0 0.5rem 0.3rem hsl(12deg 88% 59% / 26%);
+}
+.button:hover {
+  opacity: 0.8;
+}
+
+button.menu-hamburger {
+  display: none;
+  border: none;
+  background: transparent;
+}
+
+section.intro {
+  padding: 6.4rem 6.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.text-container {
+  width: 42rem;
+}
+
+h1.title-intro {
+  color: var(--dark-blue);
+  font-weight: 700;
+  font-size: 4.6rem;
+}
+
+p.details {
+  color: var(--dark-grayish-blue);
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 3.6rem 0;
+  line-height: 2.2rem;
+  max-width: 30rem;
+}
+
+img.diagram {
+  width: 48rem;
+}
+
+section.about {
+  background: var(--very-light-gray);
+  padding: 6.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("images/bg-tablet-pattern.svg");
+  background-position: bottom -45rem left -40rem;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  overflow: hidden;
+}
+
+div.container {
+  min-width: 55.2rem;
+  align-self: flex-start;
+}
+
+h2.title-about {
+  color: var(--dark-blue);
+  font-weight: 700;
+  font-size: 3.4rem;
+  width: 80%;
+}
+
+p.details-about {
+  color: var(--dark-grayish-blue);
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 3.6rem 0;
+  line-height: 2.2rem;
+  max-width: 30rem;
+}
+
+nav.list-about {
+  align-self: flex-start;
+}
+
+div.item-about {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3.2rem;
+}
+
+div.item-about:last-child {
+  margin-bottom: 0;
+}
+
+div.header-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+span.number {
+  color: var(--very-light-gray);
+  background: var(--bright-red);
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 0.6rem 1.6rem;
+  border-radius: 1.6rem;
+}
+
+h3.title-about {
+  color: var(--dark-blue);
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-left: 3.5rem;
+}
+
+p.item-paragraph {
+  color: var(--dark-grayish-blue);
+  font-size: 1.4rem;
+  font-weight: 400;
+  width: 72%;
+  margin-left: 8.3rem;
+}
+
+section.reviews {
+  align-items: center;
+  display: flex;
+  background: var(--very-light-gray);
+  flex-direction: column;
+  padding: 6.4rem 0;
+}
+.review-button {
+  background: var(--bright-red);
+  padding: 1rem 2.2rem;
+  border-radius: 1.8rem;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  box-shadow: 0 0.5rem 0.3rem hsl(12deg 88% 59% / 26%);
+}
+
+h2.title-reviews {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--dark-blue);
+  margin-bottom: 4.6rem;
+}
+
+div.sliders {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+
+div.grade-reviews {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 3.6rem 0;
+  width: 217rem;
+  animation-name: animation;
+  animation-duration: 45s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animation {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -434px;
+  }
+  45% {
+    margin-left: -434px;
+  }
+  50% {
+    margin-left: -868px;
+  }
+  70% {
+    margin-left: -868px;
+  }
+  75% {
+    margin-left: -1302px;
+  }
+  95% {
+    margin-left: -1302px;
+  }
+  100% {
+    margin-left: -1736px;
+  }
+}
+
+div .review {
+  align-items: center;
+  background-color: #b8b9bd14;
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  width: 41rem;
+  padding: 3rem;
+  padding-top: 4rem;
+  position: relative;
+}
+
+div.DP {
+  position: absolute;
+  width: 6.4rem;
+  top: -3.5rem;
+}
+
+img.avatar {
+  width: 100%;
+}
+
+h3.name {
+  font-size: 1.4rem;
+  color: var(--dark-blue);
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+p.details-review {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--dark-grayish-blue);
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+
+section.bottom {
+  background: var(--bright-red);
+  padding: 6.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2.details-bottom {
+  color: var(--very-light-gray);
+  font-weight: 700;
+  font-size: 3.2rem;
+  width: 40%;
+}
+
+button.bottom-button {
+  background: var(--very-light-gray);
+  color: var(--bright-red);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100px;
+}
+
+.bottom-button:hover {
+  opacity: 0.8;
+}
+
+footer {
+  align-items: center;
+  background: var(--very-dark-blue);
+  display: flex;
+  justify-content: space-between;
+  padding: 6.4rem 6.4rem;
+  height: 23rem;
+}
+
+div.container-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+ul.socials {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.social-link:hover {
+  color: var(--bright-red);
+}
+
+ul.links,
+ul.menu-list {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+  height: 100%;
+}
+
+ul.menu-list {
+  align-self: flex-start;
+  justify-content: flex-start;
+}
+.list:hover {
+  color: var(--bright-red);
+}
+
+li.link a,
+li.list a {
+  color: var(--very-light-gray);
+  font-weight: 400;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+li.list {
+  margin-bottom: 1.2rem;
+}
+
+li.list:last-child {
+  margin-bottom: 0;
+}
+.link:hover {
+  color: var(--bright-red);
+}
+
+div.text-input {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+
+.placeholder {
+  background: var(--very-light-gray);
+  border: none;
+  width: 17rem;
+  padding: 1.4rem;
+  border-radius: 3.6rem;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--dark-grayish-blue);
+  width: 200px;
+}
+
+button.button-go {
+  background: var(--bright-red);
+  padding: 1.4rem;
+  border-radius: 3.6rem;
+  border: none;
+  color: var(--very-light-gray);
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  width: 5.5rem;
+  margin-left: 1.2rem;
+}
+button.button-go:hover {
+  opacity: 0.8;
+}
+
+span.copy-right {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--dark-grayish-blue);
+  align-self: flex-end;
+}
+li :active {
+  color: var(--dark-grayish-blue);
+}
+li .social-link:hover {
+  color: var(--bright-red);
+}
+@media screen and (max-width: 425px) {
+  header button.button {
+    display: none;
+  }
+
+  ul.nav-bar {
+    display: none;
+    transition: all 0.5s;
+  }
+
+  ul.socials {
+    display: flex;
+    background: var(--very-light-gray);
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 34.6rem;
+    height: 22rem;
+    top: 11.7rem;
+    border-radius: 0.3rem;
+    padding: 1.6rem;
+    left: 4.3rem;
+    z-index: 1;
+  }
+
+  li.item {
+    font-weight: 700;
+  }
+
+  button.menu-hamburger {
+    background-image: url("images/icon-hamburger.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: 2.2rem;
+    transition: all 0.3s;
+    width: 2.5rem;
+    z-index: 1;
+  }
+
+  button.menu-hamburger-close {
+    background-image: url("images/icon-close.svg");
+  }
+
+  li.item {
+    margin-left: 0;
+  }
+}
